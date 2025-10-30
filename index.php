@@ -7,15 +7,15 @@ $password = getenv('DB_PASS');
 
 $hostname = gethostname();
 
-echo "Hello from $hostname"
+echo "Hello from $hostname";
 // Create connection
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
 // Check connection
 if (!$conn) {
-    die("❌ Database connection failed: " . mysqli_connect_error());
+    die(" Database connection failed: " . mysqli_connect_error());
 }
-echo "✅ Database connection successful!<br>";
+echo " Database connection successful!<br>";
 
 // Close connection
 mysqli_close($conn);
